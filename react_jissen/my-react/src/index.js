@@ -16,6 +16,12 @@ import MyHello from './MyHello';
 import TypeProp from './TypeProp';
 import StateCounter from './StateCounter';
 import StateParent from './StateParent';
+import EventMouse from './EventMouse';
+import EventCompare from './EventCompare';
+import EventObj from './EventObj';
+import EventArgs from './EventArgs';
+import EventPropagation from './EventPropagation';
+import EventPassive from './EventPassive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -93,8 +99,35 @@ root.render(
 //   <MyHello />
 // )
 
+// root.render(
+//   <StateParent/>
+// )
+
+// root.render(
+//   <EventMouse
+//     alt="ロゴ画像"
+//     beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif"
+//     afterSrc="https://www.web-deli.com/image/home_chara.gif" />
+// )
+
+// root.render(
+//   <EventCompare/>
+// )
+
+// root.render(
+//   <EventObj />
+// )
+
+// root.render(
+//   <EventArgs/>
+// )
+
 root.render(
-  <StateParent/>
+  <EventPropagation />
+)
+
+root.render(
+  <EventPassive />
 )
 
 // If you want to start measuring performance in your app, pass a function
