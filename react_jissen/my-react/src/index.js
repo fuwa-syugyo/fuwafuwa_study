@@ -22,6 +22,8 @@ import EventObj from './EventObj';
 import EventArgs from './EventArgs';
 import EventPropagation from './EventPropagation';
 import EventPassive from './EventPassive';
+import StateForm from './StateForm';
+import FormTextarea from './FormTextarea';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -122,12 +124,20 @@ root.render(
 //   <EventArgs/>
 // )
 
-root.render(
-  <EventPropagation />
-)
+// root.render(
+//   <EventPropagation />
+// )
+
+// root.render(
+//   <EventPassive />
+// )
+
+// root.render(
+//   <StateForm />
+// )
 
 root.render(
-  <EventPassive />
+  <FormTextarea />
 )
 
 // If you want to start measuring performance in your app, pass a function
