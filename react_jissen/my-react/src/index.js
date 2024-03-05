@@ -24,6 +24,7 @@ import EventPropagation from './EventPropagation';
 import EventPassive from './EventPassive';
 import StateForm from './StateForm';
 import FormTextarea from './FormTextarea';
+import StateNest from './StateNest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -136,8 +137,12 @@ root.render(
 //   <StateForm />
 // )
 
+// root.render(
+//   <FormTextarea />
+// )
+
 root.render(
-  <FormTextarea />
+  < StateNest />
 )
 
 // If you want to start measuring performance in your app, pass a function
