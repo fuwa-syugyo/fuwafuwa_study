@@ -16,3 +16,15 @@
 - - `value`属性じゃないよ！
 
 リアルタイムの値がほしいときは制御コンポーネント、そうでもないときは非制御コンポーネントを使うのが良いのかも
+
+### React Hook Form
+- 入力値の検証をしてくれる。フックとの親和性が高いらしい
+- useForm関数
+- - フォームを初期化する
+- - `useForm(opts)`
+- register関数
+- - 指定されたフィールドに対応するイベントハンドラーや参照などを登録するための関数
+- - `register(name [, opts])`
+- handleSubmit関数
+- - submit時の処理をする。`onsubmit`が検証成功時、`onerror`が検証失敗時の処理
+- - `handleSubmit(onsubmit [, onerror])`
