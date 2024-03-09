@@ -26,6 +26,8 @@ import StateForm from './StateForm';
 import FormTextarea from './FormTextarea';
 import StateNest from './StateNest';
 import StateTodo from './StateTodo';
+import StateEffect from './StateEffect';
+import HookEffect from './HookEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -146,8 +148,16 @@ root.render(
 //   < StateNest />
 // )
 
+// root.render(
+//   <StateTodo/>
+// )
+
+// root.render(
+//   <StateEffect/>
+// )
+
 root.render(
-  <StateTodo/>
+  <HookEffect init={10}/>
 )
 
 // If you want to start measuring performance in your app, pass a function
