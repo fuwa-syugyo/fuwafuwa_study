@@ -28,3 +28,12 @@
 - - `ref`: ref属性を受け取るための引数
 - - `statements`: コンポーネント本体
 - ref属性に渡されたRefオブジェクトを配下に引き渡すための関数
+
+## `useImperativeHandle`関数
+- `useImperativeHandle(ref, handle [, deps])`
+- - `ref`: ref属性経由で受け取ったRefオブジェクト
+- - `handle`: ref経由で公開するオブジェクトを生成する関数
+- - `deps`: 依存する値(配列)
+- 関数コンポーネント配下で定義したメソッドを親コンポーネントに対して公開する
+- `ref`を受け取るため、`forwardRef`関数の併用が前提
+- `deps`が変更されたタイミングで`handle`を再実行する
