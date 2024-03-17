@@ -22,6 +22,13 @@ import EventObj from './EventObj';
 import EventArgs from './EventArgs';
 import EventPropagation from './EventPropagation';
 import EventPassive from './EventPassive';
+import StateForm from './StateForm';
+import FormTextarea from './FormTextarea';
+import StateNest from './StateNest';
+import StateTodo from './StateTodo';
+import StateEffect from './StateEffect';
+import HookEffect from './HookEffect';
+import HookRefForward from './HookRefForward';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -122,14 +129,41 @@ root.render(
 //   <EventArgs/>
 // )
 
-root.render(
-  <EventPropagation />
-)
+// root.render(
+//   <EventPropagation />
+// )
+
+// root.render(
+//   <EventPassive />
+// )
+
+// root.render(
+//   <StateForm />
+// )
+
+// root.render(
+//   <FormTextarea />
+// )
+
+// root.render(
+//   < StateNest />
+// )
+
+// root.render(
+//   <StateTodo/>
+// )
+
+// root.render(
+//   <StateEffect/>
+// )
+
+// root.render(
+//   <HookEffect init={10}/>
+// )
 
 root.render(
-  <EventPassive />
+  <HookRefForward />
 )
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
